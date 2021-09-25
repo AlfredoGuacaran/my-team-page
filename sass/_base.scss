@@ -1,0 +1,28 @@
+//colors
+$color-gray-light: #fafafa;
+$color-back: #000000;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.container {
+  background-color: $color-gray-light;
+  padding: 5rem;
+  padding-bottom: 1rem;
+  display: grid;
+  justify-content: space-around;
+  row-gap: 16rem;
+}
