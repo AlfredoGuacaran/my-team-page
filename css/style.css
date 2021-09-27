@@ -15,17 +15,20 @@ html {
 }
 
 .container {
+  margin-top: 4rem;
   background-color: #fafafa;
-  padding: 5rem;
-  padding-bottom: 1rem;
   display: grid;
-  justify-content: space-around;
-  row-gap: 16rem;
+  grid-template-rows: repeat(3, min-content);
+  row-gap: 10rem;
+  grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(6, [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end];
 }
 
 .header {
+  grid-column: center-start/center-end;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 5rem;
+  margin-left: 3rem;
 }
 .header__heading-1 {
   font-family: ptserif;
@@ -45,28 +48,41 @@ html {
 }
 
 .gallery {
+  grid-column: center-start/center-end;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 10rem;
-  column-gap: 8rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 6rem;
+  justify-items: center;
 }
-.gallery__element {
-  position: relative;
+@media only screen and (min-width: 38.75em) {
+  .gallery__element-right {
+    transform: translateY(6rem);
+  }
 }
-.gallery__element-displaced {
-  transform: translateY(10rem);
+@media only screen and (min-width: 58.125em) {
+  .gallery__element-right {
+    transform: translateY(0rem);
+  }
+}
+@media only screen and (min-width: 58.125em) {
+  .gallery__element-center {
+    transform: translateY(6rem);
+  }
+}
+.gallery .photo {
+  display: inline-flex;
 }
 .gallery__team-position {
   font-family: ptserif;
   font-weight: 600;
-  font-weight: 1.2rem;
+  font-size: 1.2rem;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  position: absolute;
-  right: -2.1rem;
+  margin-left: 0.1rem;
+  letter-spacing: 0.1rem;
 }
 .gallery__img {
-  width: 24rem;
+  width: 25rem;
 }
 .gallery__person-name {
   font-family: poppins;
@@ -76,6 +92,8 @@ html {
 }
 
 .footer {
+  grid-row: 3/4;
+  grid-column: center-start/center-end;
   font-family: montserrat;
   font-weight: 700;
   color: #727171a9;

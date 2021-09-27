@@ -2,6 +2,11 @@
 $color-gray-light: #fafafa;
 $color-back: #000000;
 
+//breack points
+
+$bp-2x3: 58.125em; // 930px / 16px
+$bp-1x6: 38.75em; //620 /16
+
 * {
   margin: 0;
   padding: 0;
@@ -19,10 +24,16 @@ html {
 }
 
 .container {
+  margin-top: 4rem;
   background-color: $color-gray-light;
-  padding: 5rem;
-  padding-bottom: 1rem;
+
   display: grid;
-  justify-content: space-around;
-  row-gap: 16rem;
+  grid-template-rows: repeat(3, min-content);
+  row-gap: 10rem;
+  grid-template-columns:
+    [ full-start] minmax(3rem, 1fr)
+    [center-start] repeat(6, [col-start] minmax(min-content, 16rem) [col-end])
+    [center-end]
+    minmax(3rem, 1fr)
+    [full-end];
 }

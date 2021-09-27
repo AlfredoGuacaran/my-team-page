@@ -15,6 +15,7 @@
     />
     <title>My Team Page</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -31,38 +32,54 @@
       </header>
       <main class="gallery">
         <figure class="gallery__element">
-          <p class="gallery__team-position">PRODUCT OWNER</p>
-          <img src="img/photo1.png" alt="Team person" class="gallery__img" />
+          <div class="photo">
+            <img src="img/photo1.png" alt="Team person" class="gallery__img" />
+            <p class="gallery__team-position">PRODUCT OWNER</p>
+          </div>
           <p class="gallery__person-name">Bill Mahoney</p>
         </figure>
 
-        <figure class="gallery__element gallery__element-displaced">
-          <p class="gallery__team-position">ART DIRECTOR</p>
-          <img src="img/photo2.png" alt="Team person" class="gallery__img" />
+        <figure
+          class="
+            gallery__element gallery__element-center gallery__element-right
+          "
+        >
+          <div class="photo">
+            <img src="img/photo2.png" alt="Team person" class="gallery__img" />
+            <p class="gallery__team-position">ART DIRECTOR</p>
+          </div>
           <p class="gallery__person-name">Saba Cabrera</p>
         </figure>
 
         <figure class="gallery__element">
-          <p class="gallery__team-position">TECH LEAD</p>
-          <img src="img/photo3.png" alt="Team person" class="gallery__img" />
+          <div class="photo">
+            <img src="img/photo3.png" alt="Team person" class="gallery__img" />
+            <p class="gallery__team-position">TECH LEAD</p>
+          </div>
           <p class="gallery__person-name">Shae Le</p>
         </figure>
 
-        <figure class="gallery__element">
-          <p class="gallery__team-position">UX DESIGNER</p>
-          <img src="img/photo4.png" alt="Team person" class="gallery__img" />
+        <figure class="gallery__element gallery__element-right">
+          <div class="photo">
+            <img src="img/photo4.png" alt="Team person" class="gallery__img" />
+            <p class="gallery__team-position">UX DESIGNER</p>
+          </div>
           <p class="gallery__person-name">Skaylah Lu</p>
         </figure>
 
-        <figure class="gallery__element gallery__element-displaced">
-          <p class="gallery__team-position">DEVELOPER</p>
-          <img src="img/photo5.png" alt="Team person" class="gallery__img" />
+        <figure class="gallery__element gallery__element-center">
+          <div class="photo">
+            <img src="img/photo5.png" alt="Team person" class="gallery__img" />
+            <p class="gallery__team-position">DEVELOPER</p>
+          </div>
           <p class="gallery__person-name">Griff Richards</p>
         </figure>
 
-        <figure class="gallery__element">
-          <p class="gallery__team-position">DEVELOPER</p>
-          <img src="img/photo6.png" alt="Team person" class="gallery__img" />
+        <figure class="gallery__element gallery__element-right">
+          <div class="photo">
+            <img src="img/photo6.png" alt="Team person" class="gallery__img" />
+            <p class="gallery__team-position">DEVELOPER</p>
+          </div>
           <p class="gallery__person-name">Stan John</p>
         </figure>
       </main>
