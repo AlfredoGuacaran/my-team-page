@@ -5,5 +5,5 @@ Una pagina simple para practicar desarrollo responsivo usando CSS Flex-Grid.<br>
 Online en --->>> https://my-team-page-alfredoguacaran.netlify.app/
 
 ENG<br>
-A simple error page to practice responsive development using CSS Flex-Grid.
+A simple error page to practice responsive development using CSS Flex-Grid.<br>
 Online on --->>> https://my-team-page-alfredoguacaran.netlify.app/

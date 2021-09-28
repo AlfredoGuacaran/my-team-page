@@ -34,11 +34,11 @@
   &__element-right {
     // transform: translateY(0rem);
     @media only screen and (min-width: $bp-1x6) {
-      transform: translateY(6rem);
+      margin-top: 6rem;
     }
 
     @media only screen and (min-width: $bp-2x3) {
-      transform: translateY(0rem);
+      margin-top: 0rem;
     }
   }
 
@@ -46,13 +46,19 @@
     // transform: translateY(0rem);
 
     @media only screen and (min-width: $bp-2x3) {
-      transform: translateY(6rem);
+      margin-top: 5rem;
+      // transform: translateY(6rem);
     }
   }
   .photo {
     display: inline-flex;
   }
 
+  &__element:hover {
+    cursor: pointer;
+    transition: all 0.1s;
+    transform: translateY(-1rem);
+  }
   &__team-position {
     font-family: ptserif;
     font-weight: 600;
@@ -65,6 +71,7 @@
 
   &__img {
     width: 25rem;
+    border-radius: 5px;
   }
   &__person-name {
     font-family: poppins;

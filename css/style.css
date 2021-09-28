@@ -56,21 +56,26 @@ html {
 }
 @media only screen and (min-width: 38.75em) {
   .gallery__element-right {
-    transform: translateY(6rem);
+    margin-top: 6rem;
   }
 }
 @media only screen and (min-width: 58.125em) {
   .gallery__element-right {
-    transform: translateY(0rem);
+    margin-top: 0rem;
   }
 }
 @media only screen and (min-width: 58.125em) {
   .gallery__element-center {
-    transform: translateY(6rem);
+    margin-top: 5rem;
   }
 }
 .gallery .photo {
   display: inline-flex;
+}
+.gallery__element:hover {
+  cursor: pointer;
+  transition: all 0.1s;
+  transform: translateY(-1rem);
 }
 .gallery__team-position {
   font-family: ptserif;
@@ -83,6 +88,7 @@ html {
 }
 .gallery__img {
   width: 25rem;
+  border-radius: 5px;
 }
 .gallery__person-name {
   font-family: poppins;
